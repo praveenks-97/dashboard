@@ -1,7 +1,10 @@
 # Custom Dashboard Builder with Customer Order Analytics
 
 A complete enterprise-style dashboard builder with analytics widgets built for Halleyx Challenge II.
-
+🎥 Demo Video
+👉 Watch full demo here:
+https://drive.google.com/file/d/1dcu_UikJiCpx5Uey9DVLnX8stlmy6dDZ/view?usp=sharing
+ 
 ## 🚀 Technology Stack
 * **Frontend:** React (Vite), TailwindCSS, React Router, Recharts, React Grid Layout, Axios
 * **Backend:** Spring Boot (Java 17+), Spring Data JPA, Hibernate, Validation, Lombok
@@ -11,6 +14,7 @@ A complete enterprise-style dashboard builder with analytics widgets built for H
 1. **Java 17** or higher installed.
 2. **Node.js** (v18+ recommended) installed.
 3. **MySQL** Server running locally on port 3306.
+
 
 ## ⚙️ Database Setup
 1. Open your MySQL client (e.g., MySQL Workbench).
