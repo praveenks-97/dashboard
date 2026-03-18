@@ -25,10 +25,10 @@ export default function Login() {
           <div className="w-20 h-20 bg-yellow-600 rounded-[2rem] shadow-[0_0_40px_rgba(255,204,0,0.2)] flex items-center justify-center mb-6 transition-transform duration-700 hover:rotate-12">
             <span className="text-black font-black text-4xl font-display">H</span>
           </div>
-          <h1 className="text-4xl font-display font-black text-white tracking-tighter mb-2">Halleyx Core</h1>
+          <h1 className="text-4xl font-display font-black text-white tracking-tighter mb-2">DataVista</h1>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-yellow-500 shadow-glow" />
-            <p className="text-[10px] uppercase font-black tracking-[0.4em] text-slate-500">Autonomous Dashboard OS</p>
+            <p className="text-[10px] uppercase font-black tracking-[0.4em] text-slate-500">Autonomous Dashboard</p>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ export default function Login() {
 
           <form onSubmit={handleLogin} className="space-y-6 relative z-10">
             <div>
-              <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-2 ml-4">Access Identifier</label>
+              <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-2 ml-4">Email</label>
               <input
                 type="email"
                 className="input-field !h-14 !rounded-2xl !bg-white/5 !border-white/10 !text-white focus:!border-yellow-500/50 focus:!ring-yellow-500/20 transition-all placeholder:text-slate-600 font-bold"
@@ -48,7 +48,7 @@ export default function Login() {
               />
             </div>
             <div>
-              <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-2 ml-4">Security Key</label>
+              <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-2 ml-4">Password</label>
               <input
                 type="password"
                 className="input-field !h-14 !rounded-2xl !bg-white/5 !border-white/10 !text-white focus:!border-yellow-500/50 focus:!ring-yellow-500/20 transition-all placeholder:text-slate-600 font-bold"
@@ -60,7 +60,7 @@ export default function Login() {
             </div>
 
             <button type="submit" className="btn-primary !h-14 w-full !rounded-2xl shadow-glow active:scale-95 transition-all flex items-center justify-center gap-3">
-              <span className="font-black uppercase tracking-[0.2em] text-[11px]">Authorize System</span>
+              <span className="font-black uppercase tracking-[0.2em] text-[11px]">Log in </span>
             </button>
           </form>
 

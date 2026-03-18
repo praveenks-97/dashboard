@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom'
 import { LayoutDashboard, ShoppingCart, Settings, LogOut } from 'lucide-react'
 
 const links = [
-  { to: '/dashboard',        icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/orders',           icon: ShoppingCart,    label: 'Orders' },
-  { to: '/dashboard/config', icon: Settings,        label: 'Configure' },
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/orders', icon: ShoppingCart, label: 'Orders' },
+  { to: '/dashboard/config', icon: Settings, label: 'Configure' },
 ]
 
 export default function Sidebar() {
@@ -15,11 +15,11 @@ export default function Sidebar() {
         <div className="h-20 flex items-center px-6 border-b border-white/5 bg-[#0a0a0a]/50">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-yellow-600 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(255,204,0,0.2)]">
-              <span className="text-black font-black text-xl">H</span>
+              <span className="text-black font-black text-xl">D</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black tracking-tighter text-white leading-none">Halleyx</span>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-yellow-500 font-black mt-1">Core Engine</span>
+              <span className="text-xl font-black tracking-tighter text-white leading-none">DataVista</span>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-yellow-500 font-black mt-1">DashBoard</span>
             </div>
           </div>
         </div>
@@ -35,8 +35,8 @@ export default function Sidebar() {
               className={({ isActive }) =>
                 `flex items-center gap-3 px-4 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest transition-all group
                  ${isActive
-                   ? 'bg-yellow-600/10 text-yellow-500 border border-yellow-600/20'
-                   : 'text-slate-500 hover:bg-white/5 hover:text-slate-200'}`
+                  ? 'bg-yellow-600/10 text-yellow-500 border border-yellow-600/20'
+                  : 'text-slate-500 hover:bg-white/5 hover:text-slate-200'}`
               }
             >
               <Icon size={16} className="shrink-0 group-hover:scale-110 transition-transform" />
@@ -53,9 +53,9 @@ export default function Sidebar() {
           className="flex items-center gap-3 px-4 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest text-slate-500 hover:bg-rose-500/10 hover:text-rose-500 transition-all group"
         >
           <LogOut size={16} />
-          <span>Protocol Termination</span>
+          <span>Log out</span>
         </NavLink>
-        
+
         <div className="p-4 rounded-[2rem] bg-yellow-600/5 border border-yellow-600/10 relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-16 h-16 bg-yellow-600/10 blur-2xl rounded-full translate-x-1/2 -translate-y-1/2" />
           <div className="flex justify-between items-center opacity-60 text-[9px] font-black tracking-[0.3em] uppercase mb-3 text-slate-500">

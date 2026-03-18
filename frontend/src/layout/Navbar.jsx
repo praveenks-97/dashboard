@@ -3,9 +3,9 @@ import { useLocation } from 'react-router-dom'
 import { useState } from 'react'
 
 const titles = {
-  '/dashboard':        'Dashboard',
+  '/dashboard': 'Dashboard',
   '/dashboard/config': 'Configure Dashboard',
-  '/orders':           'Customer Orders',
+  '/orders': 'Customer Orders',
 }
 
 export default function Navbar({ dark, setDark }) {
@@ -22,7 +22,7 @@ export default function Navbar({ dark, setDark }) {
           SYSTEM LIVE
         </div>
       </div>
-      
+
       <div className="flex items-center gap-2">
         {/* Actions bar */}
         <div className="flex items-center gap-1 border-r border-slate-200 dark:border-slate-700 pr-2 mr-2">
@@ -33,16 +33,16 @@ export default function Navbar({ dark, setDark }) {
           >
             {dark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          
+
           <div className="relative">
-            <button 
+            <button
               onClick={() => setShowNotifications(!showNotifications)}
               className="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors relative text-slate-500"
             >
               <Bell size={18} />
               <span className="absolute top-2 right-2 w-2 h-2 bg-yellow-600 rounded-full border-2 border-white dark:border-slate-800"></span>
             </button>
-            
+
             {showNotifications && (
               <div className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-slate-800 rounded-md shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden z-50">
                 <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 flex justify-between items-center">
@@ -65,7 +65,7 @@ export default function Navbar({ dark, setDark }) {
         <div className="flex items-center gap-3 pl-2 cursor-pointer group">
           <div className="text-right hidden sm:block">
             <span className="block text-xs font-bold text-slate-700 dark:text-white uppercase leading-none">Michael Harris</span>
-            <span className="block text-[9px] text-slate-500 dark:text-slate-400 font-medium mt-1">Administrator</span>
+            <span className="block text-[9px] text-slate-500 dark:text-slate-400 font-medium mt-1">Admin</span>
           </div>
           <div className="w-8 h-8 rounded bg-slate-200 dark:bg-slate-700 overflow-hidden border border-slate-300 dark:border-slate-600">
             <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael" alt="Avatar" className="w-full h-full object-cover" />
